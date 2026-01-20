@@ -16,8 +16,9 @@ the function generates the following template <br/>
 - every '.', '-' and ' ' are replaced with a '_'
 
 ## how to use
-call ```require("headerguard").setup({})```
-and then inside an empty header file call the function ```:GenerateGuard```
+- call ```require("headerguard").setup({})```
+- inside an empty header file call the function ```:GenerateGuard```
+### this could also be mapped to a keybind
 
 ## options
 - prefix : the ```<PREFIX>``` constant (by default it is set to empty)
