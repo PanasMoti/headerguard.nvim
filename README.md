@@ -1,8 +1,9 @@
 # headerguard.nvim
-a simple header guard generation neovim plugin <br/>
-the function generates the following template <br/>
 > [!IMPORTANT]
 > this is mostly for my personal usesage so bugs maybe plentiful and this may not be updated ever
+
+a simple header guard generation neovim plugin <br/>
+the function generates the following template <br/>
 ```
 #ifndef __<PREFIX>_<PROJECT_NAME>_<FILE_NAME>__
 #define __<PREFIX>_<PROJECT_NAME>_<FILE_NAME>__
