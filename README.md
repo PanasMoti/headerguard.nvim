@@ -20,6 +20,9 @@ the function generates the following template <br/>
 > all letters are converted to upper case <br />
 > every '.', '-' and ' ' are replaced with a '_'
 
+> [!WARNING]
+> this should only be used on empty files
+
 # Install
 - packer:
 ```
