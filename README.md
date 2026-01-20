@@ -20,7 +20,10 @@ call ```require("headerguard").setup({})```
 and then inside an empty header file call the function ```:GenerateGuard```
 
 ## options
-- prefix ```require("headerguard").setup({
+- prefix 
+```
+require("headerguard").setup({
     opts.prefix = 'my-prefix'
-})```
+})
+```
 
