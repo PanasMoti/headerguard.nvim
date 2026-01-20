@@ -1,4 +1,7 @@
 # headerguard.nvim
+> [!IMPORTANT]
+> this is mostly for my personal usesage so bugs maybe plentiful and this may not be updated ever
+
 a simple header guard generation neovim plugin <br/>
 the function generates the following template <br/>
 ```
@@ -7,10 +10,11 @@ the function generates the following template <br/>
 
 #endif // __<PREFIX>_<PROJECT_NAME>_<FILE_NAME>__
 ```
-## what is what
-- ```<PREFIX>``` is what get specified in the plugin setup
-- ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* 
-- ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)*
+
+> [!NOTE]
+> ```<PREFIX>``` is what get specified in the plugin setup
+> ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* 
+> ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)*
 
 > [!NOTE]
 > every '.', '-' and ' ' are replaced with a '_'
