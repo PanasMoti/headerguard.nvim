@@ -19,13 +19,19 @@ the function generates the following template <br/>
 > [!NOTE]
 > every '.', '-' and ' ' are replaced with a '_'
 
-## how to use
+# Install
+- packer:
+```
+use "PanasMoti/headerguard.nvim"
+```
+
+# How To Use 
 - call ```require("headerguard").setup({})```
 - inside an empty header file call the function ```:GenerateGuard```
 > [!TIP] 
 > this could also be mapped to a keybind
 
-# EXAMPLE
+# Example
 ```
 require("headerguard").setup({
     prefix = 'panasmoti'
