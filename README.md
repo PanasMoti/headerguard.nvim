@@ -9,18 +9,18 @@ the function generates the following template <br/>
 ```
 ## what is what
 - ```<PREFIX>``` is what get specified in the plugin setup
-- ```<PROJECT_NAME>``` is the directory the header file is in. if the directory is named "include", "inc" it uses the root directory of that 
+- ```<PROJECT_NAME>``` is the directory the header file is in. if the directory is named "include", "inc", "source", "src" it uses the root directory of that 
 - ```<FILE_NAME>``` is the name of the header with the extension included (the .h or .hpp etc)
 
 ## notes
-- for every constant every '.', '-' and ' ' are replaced with a '_'
+- every '.', '-' and ' ' are replaced with a '_'
 
 ## how to use
 call ```require("headerguard").setup({})```
 and then inside an empty header file call the function ```:GenerateGuard```
 
 ## options
-example ```require("headerguard").setup({
+- prefix ```require("headerguard").setup({
     opts.prefix = 'my-prefix'
 })```
 

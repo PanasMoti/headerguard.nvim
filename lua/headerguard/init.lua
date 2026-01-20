@@ -8,10 +8,18 @@ local function replace_dot(str)
     return string.gsub(str, "%.", "_")
 end
 
+local function replace_space(str)
+    return string.gsub(str, " ", "_")
+end
+
+local function fmt_string(str)
+    return string.upper(replace_dash(replace_dot(replace_space(str))))
+end
+
 function M.setup(opts)
     opts = opts or {}
     if opts.prefix then
-        prefix = string.upper(replace_dash(replace_dot(opts.prefix)))
+        prefix = fmt_string(opts.prefix) .. "_"
     end
     vim.api.nvim_create_user_command(
         "GenerateGuard",
@@ -29,8 +37,8 @@ function M.GenerateGuard()
         current_dir = vim.fn.fnamemodify(vim.fn.getcwd(), ":h:t")
     end
     print(prefix)
-    local project_name = prefix .. "_" .. string.upper(replace_dash(current_dir))
-    local file_name = string.upper(replace_dot(file))
+    local project_name = prefix .. fmt_string(current_dir) 
+    local file_name = fmt_string(file)
     local macro = "__" .. project_name .. "_" .. file_name .. "__"
     local lines = {
         "#ifndef " .. macro,
