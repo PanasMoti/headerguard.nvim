@@ -12,9 +12,9 @@ the function generates the following template <br/>
 ```
 
 > [!NOTE]
-> ```<PREFIX>``` is what get specified in the plugin setup
-> ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* 
-> ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)*
+> ```<PREFIX>``` is what get specified in the plugin setup <br/>
+> ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* <br/>
+> ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)* <br/>
 
 > [!NOTE]
 > every '.', '-' and ' ' are replaced with a '_'
