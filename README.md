@@ -9,7 +9,7 @@ the function generates the following template <br/>
 ```
 ## what is what
 - ```<PREFIX>``` is what get specified in the plugin setup
-- ```<PROJECT_NAME>``` is the directory the header file is in. if the directory is named "include", "inc", "source", "src" it uses the root directory of that 
+- ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* 
 - ```<FILE_NAME>``` is the name of the header with the extension included (the .h or .hpp etc)
 
 > [!NOTE]
