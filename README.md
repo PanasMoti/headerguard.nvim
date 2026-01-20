@@ -12,13 +12,14 @@ the function generates the following template <br/>
 - ```<PROJECT_NAME>``` is the directory the header file is in. if the directory is named "include", "inc", "source", "src" it uses the root directory of that 
 - ```<FILE_NAME>``` is the name of the header with the extension included (the .h or .hpp etc)
 
-## notes
-- every '.', '-' and ' ' are replaced with a '_'
+> [!NOTE]
+> every '.', '-' and ' ' are replaced with a '_'
 
 ## how to use
 - call ```require("headerguard").setup({})```
 - inside an empty header file call the function ```:GenerateGuard```
-### this could also be mapped to a keybind
+> [!TIP] 
+> this could also be mapped to a keybind
 
 ## options
 - prefix : the ```<PREFIX>``` constant (by default it is set to empty)
