@@ -17,6 +17,7 @@ the function generates the following template <br/>
 > ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)* <br/>
 
 > [!NOTE]
+> all letters are converted to upper case <br />
 > every '.', '-' and ' ' are replaced with a '_'
 
 # Install
