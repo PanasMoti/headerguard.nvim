@@ -13,7 +13,7 @@ the function generates the following template <br/>
 
 > [!NOTE]
 > ```<PREFIX>``` is what get specified in the plugin setup <br/>
-> ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the root directory if the directory is in ignore_dirs)* <br/>
+> ```<PROJECT_NAME>``` is the directory the header file is in. *(uses the parent directory if the directory is in ignore_dirs)* <br/>
 > ```<FILE_NAME>``` is the name of the header with the extension included *(the .h or .hpp etc)* <br/>
 
 > [!NOTE]
@@ -25,23 +25,32 @@ the function generates the following template <br/>
 > [!TIP] 
 > this could also be mapped to a keybind
 
+# EXAMPLE
+```
+require("headerguard").setup({
+    prefix = 'panasmoti'
+    ignore_dirs = { "include", "inc", "source", "src" },
+    ignore_dirs_mode = "merge",
+})
+```
+
 ## options
 - prefix : the ```<PREFIX>``` constant *(by default it is set to empty)*
 ```
 require("headerguard").setup({
-    opts.prefix = 'my-prefix'
+    prefix = 'my-prefix'
 })
 ```
 - ignore_dirs : what dirs to ignore when getting the ```<PROJECT_NAME>``` *(list bellow is the default)*
 ```
 require("headerguard").setup({
-    opts.ignore_dirs = { "include", "source", "inc", "src" }
+    ignore_dirs = { "include", "source", "inc", "src" }
 })
 ```
 - ignore_dirs_mode : ```"merge"``` or ```"replace"``` the defatult ignore_dirs list *(by default it is set to ```"merge"```)*
 ```
 require("headerguard").setup({
-    opts.ignore_dirs = { "include", "source", "inc", "src" },
-    opts.ignore_dirs_mode = "merge"
+    ignore_dirs = { "include", "source", "inc", "src" },
+    ignore_dirs_mode = "merge"
 })
 ```
