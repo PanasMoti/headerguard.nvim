@@ -20,19 +20,19 @@ call ```require("headerguard").setup({})```
 and then inside an empty header file call the function ```:GenerateGuard```
 
 ## options
-- prefix : the ```<PREFIX>``` constant 
+- prefix : the ```<PREFIX>``` constant (by default it is set to empty)
 ```
 require("headerguard").setup({
     opts.prefix = 'my-prefix'
 })
 ```
-- ignore_dirs : what dirs to ignore when getting the ```<PROJECT_NAME>```
+- ignore_dirs : what dirs to ignore when getting the ```<PROJECT_NAME>``` (list bellow is the default)
 ```
 require("headerguard").setup({
     opts.ignore_dirs = { "include", "source", "inc", "src" }
 })
 ```
-- ignore_dirs_mode : ```"merge" | "replace"``` by default it is set to ```"merge"```
+- ignore_dirs_mode : ```"merge"``` or ```"replace"``` the default ignore_dirs list (by default it is set to ```"merge"```)
 ```
 require("headerguard").setup({
     opts.ignore_dirs = { "include", "source", "inc", "src" },
