@@ -28,6 +28,18 @@ the function generates the following template <br/>
 ```
 use "PanasMoti/headerguard.nvim"
 ```
+- lazyvim:
+```
+return {
+  "PanasMoti/headerguard.nvim",
+  ft = { "c", "cpp", "h", "hpp" },
+  opts = {
+    prefix = "panasmoti",
+    ignore_dirs = { "include", "inc", "source", "src" },
+    ignore_dirs_mode = "merge",
+  },
+}
+```
 
 # How To Use 
 - call ```require("headerguard").setup({})```
